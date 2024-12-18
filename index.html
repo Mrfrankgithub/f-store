@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/Brands/f-store.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' rel='stylesheet'>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Frank Enterprises</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="">
+                <p><i class="fa-brands fa-shopify" style="font-size: 30px; padding-top: 10px;"></i>F-STORE</p>
+            </a>
+
+        </div>
+
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </label>
+
+                <!-- NOT IN TUTORIAL: The <a> tags are linked to the subpages -->
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About us</a>
+                <a href="./product.html">Products</a>
+                <a href="./impact.html">Our Impact</a>
+                <a href="./support.html">Support</a>
+                <div class="btno">
+                    <a href="#"><i style=" font-size: 25px;" class="fa-solid fa-user"></i></a>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./image/pexels-photo2.jpeg" class="image" alt="...">
+                <div class="layer">
+                    <h2>Welcome to our clothing webstore <br> what are you ordering from us today</h2>
+                    <li class="nav-item btn btn-outline-primary px-5">
+                        <a class="nav-link active" href="">Shop Now</a>
+                    </li>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./image/photo-1483985988355-763728e1935b.avif" class="image" alt="...">
+                <div class="layer">
+                    <h2>Welcome to our clothing webstore <br> what are you ordering from us today</h2>
+                    <li class="nav-item btn btn-outline-primary px-5">
+                        <a class="nav-link active" href="#">Shop Now</a>
+                    </li>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./image/pexels-photo.jpeg" class="image" alt="...">
+                <div class="layer">
+                    <h2>Welcome to our clothing webstore <br> what are you ordering from us today</h2>
+                    <li class="nav-item btn btn-outline-primary px-5">
+                        <a class="nav-link active" href="#">Shop Now</a>
+                    </li>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./image/bg/thirdcaro.avif" class="image" alt="...">
+                <div class="layer">
+                    <h2>Welcome to our clothing webstore <br> what are you ordering from us today</h2>
+                    <li class="nav-item btn btn-outline-primary px-5">
+                        <a class="nav-link active" href="#">Shop Now</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-top" style="background-color: rgb(59, 128, 231); overflow: hidden;">
+        <div class="row pt-4">
+            <div class="col-md-12">
+                <h2 class="text-center" style="font-family: sans-serif; font-style: oblique; font-weight: 600; background: linear-gradient(to right,  red, #a2b827);
+                background-clip: text;
+                color: transparent;">Get 20%
+                    off! on your first
+                    order with us</h2>
+                <p class="text-center" style="font-weight: 900; background: linear-gradient(to right, #b82799, rgb(255, 0, 0));
+                background-clip: text;
+                color: transparent;">both in clothing or in accessories <i class="fa-brands fa-shopify"></i></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <a href="#" class="tab active" data-tab="women">Women</a>
+        <a href="#" class="tab" data-tab="men">Men</a>
+        <a href="#" class="tab" data-tab="kids">Kids</a>
+        <a href="#" class="tab" data-tab="all">All</a>
+    </div>
+
+    <div class="container-cart"  style="overflow-x: hidden;">
+        <div class="tab-content active" id="women">
+            <h3 style="font-weight: 700;" class="py-4 px-3">MOST SEARCHED BRANDS THIS WEEK</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/zara1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">ZARA</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/LV.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">LOUIS VUITTON</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/NIKE.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">NIKE</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/chanel3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">CHANEL</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/gucci.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">GUCCI</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/burberryW.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">BURBERRY</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/versace.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">VERSACE</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/givenchyPERF2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">GIVENCHY</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="men">
+            <h3 style="font-weight: 700;" class="py-4 px-3">TOP SELLING BRANDS THIS WEEK</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/pumaM.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">PUMA</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/vintage.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">VINTAGE</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/acc2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">LOUIS VUITTON</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/polo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">RALPH LAUREN</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/balenciagasleeve.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">BALENCIAGA</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/balmain.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">BALMAIN PARIS</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/jean.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">LACOSTE</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/givenchyPERF.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">GIVENCHY</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="kids">
+            <h3 style="font-weight: 700;" class="py-4 px-3">MOST LISTED BRANDS THIS WEEK</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/vintageK1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">VINTAGE</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/chanelK1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">CHANEL</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/puma.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">PUMA</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/christiandiorK.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">DIOR</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/nikeup&down.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">NIKE</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/balmainK1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">BALMAIN PARIS</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/lvkids.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">LOUIS VUITTON</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/versaceK.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">VERSACE</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="all">
+            <h3 style="font-weight: 700;" class="py-4 px-3">TOP SELLING BRANDS THIS WEEK</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/CARTIER.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">CARTIER</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/diorglass.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">DIOR</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/louisvuittonfull.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">LOUIS VUITTON</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/hermes.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">HERMES</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/shoenike.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">NIKE</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/Fendi.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">FENDI</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/zara2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">ZARA</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/prada.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">PRADA</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-5">
+            <h3><b>Shop by Category</b></h3>
+            <div class="responsive">
+                <div class="col-xl-1">
+                    <img src="./image/airjordan.jpg" alt="" class="sap-fluid">
+                </div>
+                <div class="col-xl-1">
+                    <img src="./image/braceletCARTIER2.jpg" alt="" class="sap-fluid ">
+                </div>
+                <div class="col-xl-1">
+                    <img src="./image/chanelbag.jpg" alt="" class="sap-fluid">
+                </div>
+                <div class="col-xl-1">
+                    <img src="./image/glass1.jpg" alt="" class="sap-fluid">
+                </div>
+                <div class="col-xl-1">
+                    <img src="./image/d&g.jpg" alt="" class="sap-fluid">
+                </div>
+                <div class="col-xl-1">
+                    <img src="./image/nikebag.jpg" alt="" class="sap-fluid img-fluid">
+                </div>
+                <div class="col-xl-1">
+                    <img src="./image/chanel2.jpg" alt="" class="sap-fluid">
+                </div>
+                <div class="col-xl-1">
+                    <img src="./image/louis.jpg" alt="" class="sap-fluid ">
+                </div>
+                <div class="col-xl-1">
+                    <img src="./image/Pandora.jpg" alt="" class="sap-fluid">
+                </div>
+                <div class="col-xl-1">
+                    <img src="./image/1 (1).jpg" alt="" class="sap-fluid">
+                </div>
+                <div class="col-xl-1">
+                    <img src="./image/chanel4.jpg" alt="" class="sap-fluid">
+                </div>
+                <div class="col-xl-1">
+                    <img src="./image/nikeshirt.jpg" alt="" class="sap-fluid img-fluid">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="container-fluid text-light sap">
+        <h2 style="font-weight: 700;" class="text-center py-4"><span style="font-weight: 800; color: aqua;">Brief</span>
+            Introduction About Our Brand</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="pl-3">
+                    This clothing brand was made so it will be easy for people to surf and search for cloth,shoes or
+                    accessories design of their choice and place an order for it.
+                    <br>
+                    Rather than leaving their respective home or work etc, and thats why this platform is here to reduce
+                    the stress of the customers....
+                </h4>
+                <br>
+                <div class="row">
+                    <p>
+                        <button class="btn btn-outline-primary py-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseWidthExample" aria-expanded="false"
+                            aria-controls="collapseWidthExample">
+                            What are things i will discover on F-STORE <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                    </p>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                            <div class="card card-body bg-dark" style="width: 300px;">
+                                F-STORE connects you to people and closets filled with unique
+                                styles, hard-to-find pieces, and
+                                endless items to discover. Get started today and join our vibrant & diverse community
+                                who make
+                                shopping and selling simple, social, and sustainable!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="image-stack">
+                    <img src="./image/pexels-photo4.jpeg" alt="Image 1" class="ang">
+                    <img src="./image/pexels-photo5.jpeg" alt="Image 2" class="ang">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: white;">
+        <h2 style="font-weight: 700;" class="py-4 text-center">TOP TRENDING BRANDS</h2>
+        <div class="row pt-3">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="./image/Brands/burberry.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./image/Brands/brand9.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./image/Brands/brand6.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./image/Brands/brand13.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./image/Brands/brand7.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./image/Brands/brand15.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./image/Brands/brand8.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./image/Brands/brand14.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./image/Brands/brand10.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./image/Brands/brand4.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./image/Brands/brand12.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./image/Brands/brand11.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./image/Brands/brand1.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./image/Brands/brand2.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./image/Brands/brand3.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./image/Brands/allbrand.jpg" height="100" width="250" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-center mt-5">and more... 🔥</p>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+    <main style="background-color: blue; padding-bottom: 30px;">
+        <h1 class="howitworks">How It Works</h1>
+        <div class="tabe">
+            <button id="seller-tab" class="aktive" onclick="showSeller()">I Am a Seller</button>
+            <button id="buyer-tab" onclick="showBuyer()">I Am a Buyer</button>
+        </div>
+
+        <div id="seller-content" class="bricks aktive">
+            <div class="brick">
+                <img src="./image/new/find.jpg" alt="List It">
+                <h2>FIND IT</h2>
+                <p>Discover the style,Finding the perfect piece of clothing can feel like a treasure hunt. it's about
+                    discovering unique styles that resonate with you.</p>
+            </div>
+            <div class="brick">
+                <img src="./image/new/post.jpg" alt="Share It">
+                <h2>POST IT</h2>
+                <p> Posting is
+                    not just about showcasing your discovery; it’s about connecting with a community that appreciates
+                    fashion as much as you do.</p>
+            </div>
+            <div class="brick">
+                <img src="./image/new/earn1.jpg" alt="Earn Cash">
+                <h2>EARN CASH</h2>
+                <p> By turning your passion for
+                    fashion into a side hustle, you can monetize your style.</p>
+            </div>
+        </div>
+
+        <div id="buyer-content" class="bricks">
+            <div class="brick">
+                <img src="./image/new/browse.jpg" alt="Browse It">
+                <h2>BROWSE IT</h2>
+                <p>Explore a wide range of items from various sellers.</p>
+            </div>
+            <div class="brick">
+                <img src="./image/new/sell.jpg" alt="Buy It">
+                <h2>BUY IT</h2>
+                <p>Add items to your cart and check out securely.</p>
+            </div>
+            <div class="brick">
+                <img src="./image/new/recieve.jpg" alt="Receive It">
+                <h2>RECEIVE IT</h2>
+                <p>Your purchases will be shipped directly to your doorstep.</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="confidence-section">
+        <h2 style="font-weight: 700;" class="py-4 text-center">Shop & Sell with Confidence on F-STORE</h2>
+        <div class="confidence-container">
+            <div class="confidence-item">
+                <img src="./image/Brands/protect.jpg" alt="Protected Payments">
+                <h3>SECURED TRANSACTIONS</h3>
+                <p><span style="font-weight: 900; ">Encryption:</span> All transactions are protected using
+                    industry-standard encryption protocols to ensure
+                    the safety of your personal and financial information.</p>
+                <a href="#">Learn More &raquo;</a>
+            </div>
+            <div class="confidence-item">
+                <img src="./image/Brands/authe.jpg" alt="Posh Authenticate">
+                <h3>AUTHENTICITY GUARANTEE</h3>
+                <p><span style="font-weight: 900;">Verified:</span> At F-Store, we prioritize authenticity and quality
+                    in
+                    our clothing products. We ensure that all items sold on our platform are Genuine and
+                    Warrantied</p>
+                <a href="#">Learn More &raquo;</a>
+            </div>
+            <div class="confidence-item">
+                <img src="./image/Brands/shipping.jpg" alt="Expedited Shipping">
+                <h3>EXPEDITED SHIPPING</h3>
+                <p> <span style="font-weight: 900;">Shipping Options: </span>We offer various shipping methods to meet
+                    your needs, including standard and expedited options.</p>
+                <a href="#">Learn More &raquo;</a>
+            </div>
+        </div>
+
+        <p style="font-weight: 600;color:  rgb(25, 138, 190);" class="pt-5">F-STORE is here for empowering of your
+            buying and selling experience
+        </p>
+    </section>
+
+
+    <div class="container-fluid text-light good">
+        <div class="row">
+            <div class="col-md-6 ">
+                <h2 style="font-size: 30px;">Visit our support team we<br>offer 24/7 Customer Service.</h2>
+
+            </div>
+            <div class="col-md-6 ">
+                <li class="nav-item btn btn-warning px-5 bg-">
+                    <a class="nav-link active" href="./support.html">Contact Us</a>
+                </li>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>THE COMPANY</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Resale Report</a></li>
+                    <li><a href="#">Our Impact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>DEPARTMENTS</h4>
+                <ul>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Handbags</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">All</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>TOP BRANDS</h4>
+                <ul>
+                    <li><a href="#">Christian Dior</a></li>
+                    <li><a href="#">Zara</a></li>
+                    <li><a href="#">Louis Vuitton</a></li>
+                    <li><a href="#">Nike</a></li>
+                    <li><a href="#">Chanel</a></li>
+                    <li><a href="#">Gucci</a></li>
+                    <li><a href="#">Balenciaga</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>MOST LISTED BRANDS</h4>
+                <ul>
+                    <li><a href="#">Cartier</a></li>
+                    <li><a href="#">Puma</a></li>
+                    <li><a href="#">Vintage</a></li>
+                    <li><a href="#">Versace</a></li>
+                    <li><a href="#">Givenchy</a></li>
+                    <li><a href="#">Burberry</a></li>
+                    <li><a href="#">Shop All Brands</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>SELL WITH US</h4>
+                <ul>
+                    <li><a href="#">Order a Bag</a></li>
+                    <li><a href="#">Reselling Guide</a></li>
+                    <li><a href="#">All About Earnings</a></li>
+                </ul>
+            </div>
+
+            <!-- <div class="footer-column app">
+                <h4>GET THE APP</h4>
+                <div class="app-links">
+                    <a href="#"><img src="your-qr-code-image.png" alt="QR Code"></a>
+                    <div class="store-links">
+                        <a href="#"><img src="apple-store-badge.png" alt="Download on the App Store"></a>
+                        <a href="#"><img src="google-play-badge.png" alt="Get it on Google Play"></a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <hr>
+        <p class="text-center">Copyright © 2022 - 2024 F-Store - All Rights Reserved.</p>
+    </footer>
+
+
+
+
+
+
+
+    <!-- <div class="container">
+        <div class="col-md-4 yoo">
+            <img src="./image/aaaa1.jpg" alt="">
+
+        </div>
+        <div class="col-md-4 yoo">
+            <img src="./image/collections6.jpg" alt="">
+
+        </div>
+        <div class="col-md-4 yoo">
+            <img src="./image/polo3.jpg" alt="">
+        </div>
+
+    </div> -->
+
+
+
+    <!-- <nav class="nav">
+        <a href="#" class="nav__link">
+            <i class="fa-solid fa-shop nav__icon"></i>
+            <span class="nav__text">Shop</span>
+        </a>
+        <a href="#" class="nav__link nav__link--active">
+            <i class="fa-solid fa-home nav__icon"></i>
+            <span class="nav__text">Home</span>
+        </a>
+        <a href="#" class="nav__link">
+            <i class="fa-solid fa-cart-shopping nav__icon"></i>
+            <span class="nav__text">Cart</span>
+        </a>
+        <a href="#" class="nav__link">
+            <i class="fa-solid fa-user nav__icon"></i>
+            <span class="nav__text">Account</span>
+        </a>
+    </nav> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- jQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Slick JS -->
+     <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <script src="./script.js"></script>
+
+    <script>
+        // $('.container').slick({
+        //     dots: true,
+        //     infinite: true,
+        //     speed: 500,
+        //     fade: true,
+        //     cssEase: 'linear'
+        // });
+
+        // $('.center').slick({
+        //     centerMode: true,
+        //     centerPadding: '60px',
+        //     slidesToShow: 3,
+        //     responsive: [
+        //         {
+        //             breakpoint: 768,
+        //             settings: {
+        //                 arrows: false,
+        //                 centerMode: true,
+        //                 centerPadding: '40px',
+        //                 slidesToShow: 3
+        //             }
+        //         },
+        //         {
+        //             breakpoint: 480,
+        //             settings: {
+        //                 arrows: false,
+        //                 centerMode: true,
+        //                 centerPadding: '40px',
+        //                 slidesToShow: 1
+        //             }
+        //         }
+        //     ]
+        // });
+
+
+
+        // $('.autoplay').slick({
+        //     slidesToShow: 3,
+        //     slidesToScroll: 1,
+        //     autoplay: true,
+        //     autoplaySpeed: 2000,
+        // });
+
+        $('.responsive').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/Brands/f-store.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' rel='stylesheet'>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Frank Enterprises</title>
+    <style>
+        .testimonial-section {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+
+        .testimonial-box {
+            text-align: center;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        .testimonial-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #3d3fb6;
+        }
+
+        .testimonial-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .testimonial-role {
+            color: #888;
+            font-style: italic;
+        }
+
+        /* Responsive grid adjustments */
+        @media (min-width: 992px) {
+            .testimonial-section .col-lg-4 {
+                margin-bottom: 0;
+            }
+        }
+
+        .testimonial-card {
+            border: none;
+            border-radius: 10px;
+            background-color: #FAF3E0;
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: scale(1.05);
+        }
+
+        :root {
+            counter-reset: headings;
+        }
+
+        .hcounter {
+            counter-increment: headings;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .hcounter::before {
+            content: counter(headings);
+            background-color: #0071FF;
+            border-radius: 2px;
+            padding: .15em 0;
+            width: 40px;
+            text-align: center;
+        }
+
+
+        .pcounter {
+            max-width: 500px;
+            color: #17181a;
+        }
+
+        .according {
+            margin: 60ox auto;
+            width: 100%;
+            max-width: 750px;
+        }
+
+        .according li {
+            list-style: none;
+            width: 100%;
+            padding: 5px;
+        }
+
+        .according li .labp {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #f8f9fa;
+            background: blue;
+            margin-bottom: 2px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .labp::after {
+            content: '+';
+            font-size: 34px;
+            position: absolute;
+            right: 20px;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .according .contain {
+            background-color: #e9e5e5;
+            text-align: left;
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s, padding 0.5s;
+        }
+
+        .according input[type="radio"]:checked+.labp+.contain {
+            max-height: 600px;
+            padding: 30px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="">
+                <p><i class="fa-brands fa-shopify" style="font-size: 30px; padding-top: 10px;"></i>F-STORE</p>
+            </a>
+
+        </div>
+
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </label>
+
+                <!-- NOT IN TUTORIAL: The <a> tags are linked to the subpages -->
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About us</a>
+                    <a href="./product.html">Products</a>
+                    <a href="./impact.html">Our Impact</a>
+                    <a href="./support.html">Support</a>
+                <div class="btno">
+                    <a href=""><i style=" font-size: 25px;" class="fa-solid fa-user"></i></a>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./image/pexels-photo2.jpeg" class="image" alt="...">
+                <div class="layer">
+                    <h2>Welcome to our clothing webstore <br> what are you ordering from us today</h2>
+                    <li class="nav-item btn btn-outline-primary px-5">
+                        <a class="nav-link active" href="./addtocart.html">Shop Now</a>
+                    </li>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./image/photo-1483985988355-763728e1935b.avif" class="image" alt="...">
+                <div class="layer">
+                    <h2>Welcome to our clothing webstore <br> what are you ordering from us today</h2>
+                    <li class="nav-item btn btn-outline-primary px-5">
+                        <a class="nav-link active" href="#">Shop Now</a>
+                    </li>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./image/pexels-photo.jpeg" class="image" alt="...">
+                <div class="layer">
+                    <h2>Welcome to our clothing webstore <br> what are you ordering from us today</h2>
+                    <li class="nav-item btn btn-outline-primary px-5">
+                        <a class="nav-link active" href="#">Shop Now</a>
+                    </li>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./image/bg/thirdcaro.avif" class="image" alt="...">
+                <div class="layer">
+                    <h2>Welcome to our clothing webstore <br> what are you ordering from us today</h2>
+                    <li class="nav-item btn btn-outline-primary px-5">
+                        <a class="nav-link active" href="#">Shop Now</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-top" style="background-color: rgb(59, 128, 231); overflow: hidden;">
+        <div class="row pt-4">
+            <div class="col-md-12">
+                <h2 class="text-center" style="font-family: sans-serif; font-style: oblique; font-weight: 600; background: linear-gradient(to right,  red, #a2b827);
+                background-clip: text;
+                color: transparent;">Get 20%
+                    off! on your first
+                    order with us</h2>
+                <p class="text-center" style="font-weight: 900; background: linear-gradient(to right, #b82799, rgb(255, 0, 0));
+                background-clip: text;
+                color: transparent;">both in clothing or in accessories <i class="fa-brands fa-shopify"></i></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h2 class="text-center pt-3"><b>ABOUT F-STORE</b></h2>
+        <div class="row m-3" style="border: 2px solid blue;">
+            <div class="col-md-6 pt-3">
+                <b><strong>Welcome to F-Store – Your Ultimate Clothing Destination!</strong>
+
+                    F-Store is a premier clothing brand dedicated to providing you with top-quality designs and apparel
+                    that suit every taste, occasion, and lifestyle. Whether you’re looking for stylish outfits for men
+                    or women, we’ve got you covered. From casual joggers and jeans to classic polos, wristwatches,
+                    T-shirts, elegant suits, trendy shoes, and much more, F-Store offers an extensive collection to meet
+                    all your fashion needs.
+                    <br>
+                    No more spending hours traveling or searching store after store. With F-Store, you can browse
+                    through our wide range of products and effortlessly find the perfect items that match your
+                    preferences. Whether you need a sophisticated outfit for a formal event, comfortable wear for
+                    everyday use, or stylish accessories to complete your look, we’re here to ensure you always stand
+                    out.
+
+
+
+
+
+                </b>
+                <ul class="according">
+                    <li>
+                        <input type="radio" name="according" id="first">
+                        <label  class="labp" for="first">Our mission</label>
+                        <div class="contain">
+                            <p> <em>Is to deliver unparalleled satisfaction to our customers and ensure they
+                                    keep
+                                    coming back for more.</em> We believe fashion should be convenient, accessible, and
+                                enjoyable.
+                                That’s why
+                                <br>
+                                F-Store is designed to make shopping easier and stress-free.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="according" id="second">
+                        <label class="labp" for="second">Why Choose F-Store?</label>
+                        <div class="contain">
+                            <p>At F-Store, we redefine the way you shop for clothing and accessories, ensuring that
+                                every purchase is seamless, enjoyable, and tailored to your style. Explore our
+                                collection today and experience the joy of shopping with a brand that truly understands
+                                your needs.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 p-3">
+                <img src="./image/pexels-photo5.jpeg" alt="" width="100%" height="auto" style="border-radius: 10px;">
+            </div>
+        </div>
+    </div>
+
+    <section class="testimonial-section bg-primary p-3">
+        <div class="container">
+            <h2 class="text-center" style="color: #fdfdfd; font-weight: 700;">OUR TEAM</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-box" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="./image/profile.png" alt="Testimonial 1" class="testimonial-img">
+                        <h5 class="testimonial-name">undisclosed</h5>
+                        <p class="testimonial-role">CEO & Founder</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-box" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="./image/profile.png" alt="Testimonial 2" class="testimonial-img">
+                        <h5 class="testimonial-name">undisclosed</h5>
+                        <p class="testimonial-role">Co-Founder</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-box" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="./image/profile.png" alt="Testimonial 3" class="testimonial-img">
+                        <h5 class="testimonial-name">undisclosed</h5>
+                        <p class="testimonial-role">Financial Director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-box" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="./image/profile.png" alt="Testimonial 4" class="testimonial-img">
+                        <h5 class="testimonial-name">undisclosed</h5>
+                        <p class="testimonial-role">UX/UI Designer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-box" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="./image/profile.png" alt="Testimonial 5" class="testimonial-img">
+                        <h5 class="testimonial-name">undisclosed</h5>
+                        <p class="testimonial-role">Marketing Manager</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-box" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="./image/profile.png" alt="Testimonial 6" class="testimonial-img">
+                        <h5 class="testimonial-name">undisclosed</h5>
+                        <p class="testimonial-role">Manager</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="text-center mt-4">
+                <button class="btn btn-primary"></button>
+            </div> -->
+        </div>
+    </section>
+
+    <div class="container-fluid">
+        <h2 class="text-center p-3" style="font-weight: 700;">Reasons people choose f-store</h2>
+        <div class="row p-4">
+            <div class="col-md-6">
+                <h2 class="hcounter">Versatile Product Range</h2>
+                <p class="pcounter"> From apparel to accessories, we cater to all your fashion requirements.</p>
+                <h2 class="hcounter">Global Delivery</h2>
+                <p class="pcounter">No matter where you are in the world, we’ll deliver right to your doorstep.</p>
+
+            </div>
+            <div class="col-md-6">
+                <h2 class="hcounter">Customer-Centric Approach</h2>
+                <p class="pcounter">Your satisfaction is our top priority, and we are committed to exceeding your expectations.</p>
+                <h2 class="hcounter">Convenience at Your Fingertips</h2>
+                <p class="pcounter">Shop anytime, anywhere, without leaving the comfort of your home or workplace.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid text-light good">
+        <div class="row">
+            <div class="col-md-6 ">
+                <h2 style="font-size: 30px;">Visit our support team we<br>offer 24/7 Customer Service.</h2>
+
+            </div>
+            <div class="col-md-6 ">
+                <li class="nav-item btn btn-warning px-5 bg-">
+                    <a class="nav-link active" href="#">Contact Us</a>
+                </li>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>THE COMPANY</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Resale Report</a></li>
+                    <li><a href="#">Our Impact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>DEPARTMENTS</h4>
+                <ul>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Handbags</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">All</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>TOP BRANDS</h4>
+                <ul>
+                    <li><a href="#">Christian Dior</a></li>
+                    <li><a href="#">Zara</a></li>
+                    <li><a href="#">Louis Vuitton</a></li>
+                    <li><a href="#">Nike</a></li>
+                    <li><a href="#">Chanel</a></li>
+                    <li><a href="#">Gucci</a></li>
+                    <li><a href="#">Balenciaga</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>MOST LISTED BRANDS</h4>
+                <ul>
+                    <li><a href="#">Cartier</a></li>
+                    <li><a href="#">Puma</a></li>
+                    <li><a href="#">Vintage</a></li>
+                    <li><a href="#">Versace</a></li>
+                    <li><a href="#">Givenchy</a></li>
+                    <li><a href="#">Burberry</a></li>
+                    <li><a href="#">Shop All Brands</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>SELL WITH US</h4>
+                <ul>
+                    <li><a href="#">Order a Bag</a></li>
+                    <li><a href="#">Reselling Guide</a></li>
+                    <li><a href="#">All About Earnings</a></li>
+                </ul>
+            </div>
+
+            <!-- <div class="footer-column app">
+                <h4>GET THE APP</h4>
+                <div class="app-links">
+                    <a href="#"><img src="your-qr-code-image.png" alt="QR Code"></a>
+                    <div class="store-links">
+                        <a href="#"><img src="apple-store-badge.png" alt="Download on the App Store"></a>
+                        <a href="#"><img src="google-play-badge.png" alt="Get it on Google Play"></a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <hr>
+        <p class="text-center">Copyright © 2022 - 2024 F-Store - All Rights Reserved.</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="./script.js"></script>
+
+    <script>
+
+        $('.responsive').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+    </script>
+
+
+</body>
+
+</html>
